@@ -1,0 +1,36 @@
+.mod_pageimage {
+  height: 40vh;
+  position: relative;
+  top: -180px;
+  .image_container {
+    height: 100%;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+#slideShow figure {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 40vh;
+}
+
+#header .mod_customnav.sub, #header .logo,
+#header .mod_customnav {
+  width: 100%;
+  position: relative;
+  margin: 0px auto;
+}
+
+@media screen and (max-width: 1280px) {
+  .mod_pageimage {
+    height: 90vh;
+    .image_container img {
+      height: 70vh;
+    }
+  }
+}

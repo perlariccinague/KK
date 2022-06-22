@@ -1,0 +1,16 @@
+
+<article class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+
+  <div class="ce_text block">
+
+
+
+    <div class="teaser">
+     
+      <p class="more"><a href="<?= $this->href ?>" <h2><span>Kostprobe</span> <?= $this->headline ?></h2><span class="invisible"> <?= $this->headline ?></span></a></p>
+    </div>
+
+  </div>
+
+</article>
+

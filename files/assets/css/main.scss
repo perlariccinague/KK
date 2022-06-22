@@ -1,0 +1,23 @@
+
+.rsts-prev, .rsts-next {
+  display: none;
+}
+
+.image-main {
+  margin: 30px auto;
+  border-top: 1px dotted #a32b6c;
+  border-bottom: 1px dotted #a32b6c;
+  padding: 30px 0;
+  img {
+    width: 87%;
+    height: auto;
+  }
+}
+
+.main-text {
+  margin-top: 15px;
+}
+
+.contain-image {
+  margin-top: 40px;
+}

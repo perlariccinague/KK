@@ -1,0 +1,13 @@
+<div class="layout_latest block<?php echo $this->class; ?>">
+
+<a href="<?php echo $this->link; ?>">
+	<h2><?php echo $this->newsHeadline; ?>
+		<?php if ($this->hasMetaFields): ?>
+		<p class="info"><?php echo $this->date; ?>
+		<?php endif; ?>
+		</p>
+	</h2>
+</a>
+
+</div>
+
