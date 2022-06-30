@@ -1,19 +1,34 @@
 import Lenis from '@studio-freight/lenis'
+/*import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);*/
+
+// const paths = [...document.querySelectorAll('path.path-anim')];
 
 const lenis = new Lenis({
     lerp: 0.1,
     smooth: true,
-    direction: 'vertical',
-})
+});
+const scrollFn = () => {
+    lenis.raf();
+    requestAnimationFrame(scrollFn);
+};
+requestAnimationFrame(scrollFn);
 
-//get scroll value
-lenis.on('scroll', ({ scroll, limit }) => {
-    console.log({ scroll, limit })
-})
+/*paths.forEach(el => {
+    const svgEl = el.closest('svg');
+    const pathTo = el.dataset.pathTo;
 
-function raf() {
-    lenis.raf()
-    requestAnimationFrame(raf)
-}
-
-requestAnimationFrame(raf)
+    gsap.timeline({
+        scrollTrigger: {
+            trigger: svgEl,
+            start: "top bottom",
+            end: "bottom top",
+            scrub: true
+        }
+    })
+        .to(el, {
+            ease: 'none',
+            attr: { d: pathTo }
+        });
+});*/

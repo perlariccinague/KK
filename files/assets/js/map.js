@@ -8,7 +8,7 @@ const map = L.map('map', {
     scrollWheelZoom: false
 }).setView([50.987222,11.326138], 16);
 
-L.tileLayer('https://api.mapbox.com/styles/v1/floriantepelmann/cl4xw7a3c004u14q8n4sgphfr/tiles/256/{z}/{x}/{y}?access_token={accessToken}', {
+L.tileLayer('https://api.mapbox.com/styles/v1/floriantepelmann/ckump41c903u017lizcyz4tcy/tiles/256/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 22,
     accessToken: 'pk.eyJ1IjoiZmxvcmlhbnRlcGVsbWFubiIsImEiOiJjbDR4emFzbW4xbjBuM2VwaG15c3NhbXcyIn0.1YvY1-lUe64NOobEZKhNVQ'
