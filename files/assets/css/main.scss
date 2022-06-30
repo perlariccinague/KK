@@ -106,5 +106,11 @@
   transform: translateY(-41px);
 }
 
+@media screen and (max-width: 1280px) {
+  #main h1 {
+    font-size: 2.8em;
+  }
+}
+
 
 
