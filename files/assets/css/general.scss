@@ -6,3 +6,8 @@
 #main .mod_article {
   margin-top: -70px;
 }
+
+::selection {
+  background-color: #e40038;
+  color: white;
+}

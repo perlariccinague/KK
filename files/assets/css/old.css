@@ -359,7 +359,7 @@
         text-decoration: none
     }
 
-    #main .ce_text a::before {
+    #main .ce_text p:not(.more) a::before {
         width: 100%;
         height: 52px;
         left: 0;
@@ -867,7 +867,6 @@
 
     #header {
         height: auto;
-        margin: 0 0 80px;
         padding: 0;
         width: 100%
     }
@@ -888,10 +887,14 @@
         margin-right: auto;
         margin-left: auto;
         text-align: center;
-        background-image: url("../../layout/2016/header_bg.png");
+        // background-image: url("../../layout/2016/header_bg.png");
         background-position: center top;
         background-repeat: no-repeat;
         z-index: 2
+    }
+
+    #header .header_bg svg {
+        max-width: 1190px;
     }
 
     #header .header_bg img {
@@ -1300,7 +1303,7 @@
         max-width: 100%;
         float: none;
         margin: -361px auto 0;
-        background-image: url("../../layout/2016/main_bg.png");
+        // background-image: url("../../layout/2016/main_bg.png");
         background-position: center -100px;
         background-repeat: no-repeat;
         z-index: 5
@@ -1373,7 +1376,7 @@
 
     #main .mod_newslist h2:hover {
         min-height: 144px;
-        background: #e40038 url("../../layout/2016/link.png") left center no-repeat;
+        // background: #e40038 url("../../layout/2016/link.png") left center no-repeat;
         background-position: 20px;
         background-size: 6.4%
     }
@@ -1975,7 +1978,6 @@
     #footer {
         width: 100%;
         height: 980px;
-        bottom: 25px;
         position: relative;
         margin: 100px 0 0;
         padding: 0;
@@ -2259,10 +2261,6 @@
 
 
 @media screen and (max-width: 1350px) {
-    #main .inside {
-        padding-top: 80px
-    }
-
     #header .slide {
         margin-top: -34px;
         padding-right: 5%
@@ -2282,8 +2280,20 @@
 }
 
 @media screen and (max-width: 1280px) {
+    #main {
+        margin-top: 0
+    }
+
+    #main .inside {
+        padding-top: 80px
+    }
+
     #header .ce_sliderStart .slider-control {
         top: 350px
+    }
+
+    #header .header_bg svg, #header .header_bg_bottom svg,.shadow-boxes,.bottom-shadow-boxes {
+        display: none;
     }
 
     .weimarstrom-mobil {
@@ -2494,11 +2504,7 @@
     }
 
     #main .mod_article {
-        overflow: hidden
-    }
-
-    #main {
-        margin-top: -273px
+        overflow: visible;
     }
 
     #footer {
@@ -2837,9 +2843,6 @@
 }
 
 @media screen and (max-width: 450px) {
-    #main {
-        margin-top: -361px
-    }
 
     object.small {
         width: 100%

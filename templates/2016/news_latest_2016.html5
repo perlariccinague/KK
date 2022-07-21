@@ -1,6 +1,6 @@
 <div class="layout_latest block<?php echo $this->class; ?>">
 
-<a href="<?php echo $this->link; ?>">
+<a href="<?php echo $this->link; ?>" data-hover1="<?= $this->newsHeadline; ?>" data-hover2="<?= $this->date; ?>">
 	<h2><?php echo $this->newsHeadline; ?>
 		<?php if ($this->hasMetaFields): ?>
 		<p class="info"><?php echo $this->date; ?>
